@@ -1,0 +1,50 @@
+html, body{
+    height: 100%;
+}
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-book{
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    display: none;
+    height: 350px;
+    width: 300px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.new-book-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    height: 1.5rem;
+}

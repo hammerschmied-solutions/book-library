@@ -4,21 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object Lession</title>
-    <style>
-      body {
-        display: flex;
-      }
-      .left-side,
-      .right-side {
-        width: 300px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="left-side">
+    <div class="header">
       <button type="button" class="new-book">Add Book</button>
     </div>
-    <div class="right-side"></div>
+    <div class="content"></div>
+    <div class="modal">
+      <div class="modal-content">
+        <h2>Add a new Book</h2>
+        <form class="new-book-form">
+          <div class="input-container">
+            <label for="book-title">Book title:</label>
+            <input type="text" name="book-title" id="book-title">
+          </div>
+          <div class="input-container">
+            <label for=author"">Author:</label>
+            <input type="text" name="author" id="author">
+          </div>
+          <div class="input-container">
+            <label for=pages"">Pages: </label>
+            <input type="number" name="pages" id="pages">
+          </div>
+          <div class="input-container">
+            <label for=have-read"">Have read the book?</label>
+            <input type="checkbox" name="have-read" id="have-read">
+          </div>
+          <div class="input-container">
+            <button type="submit" class="create-book">Add book</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="object-lession.js"></script>
   </body>
 </html>
